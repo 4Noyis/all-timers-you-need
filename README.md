@@ -3,6 +3,9 @@
 A modern, responsive web application that provides categorized timers for various activities including work/study sessions, cooking, meditation, workouts, and daily life activities.
 
 
+
+![App Screenshot](/screenshot-phone-usage.png)
+
 ## Features
 
 ### Timer Categories
