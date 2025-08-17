@@ -81,6 +81,12 @@ const Index = () => {
 
   useEffect(() => {
     if (timerState.timeRemaining === 0 && !timerState.isRunning && timerState.currentPreset) {
+      // Play notification sound
+      const audio = new Audio('/notification.mp3');
+      audio.play().catch(error => {
+        console.log('Could not play notification sound:', error);
+      });
+
       toast({
         title: "Time's up!",
         description: `${timerState.currentPreset.name} timer completed`,
